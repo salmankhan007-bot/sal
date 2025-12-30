@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qasr Al Nur Hotel</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      background: url('h1.jpeg') center/cover no-repeat fixed;
+      padding-top: 70px; /* navbar height fix */
+    }
+
+    /* Fix anchor scroll issue */
+    section,
+    #rooms,
+    #booking,
+    #location {
+      scroll-margin-top: 80px;
+    }
+
+    .hero{
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-align: center;
+    }
+
+    .gold-border{
+      border: 6px solid #d4af37;
+      padding: 25px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.9);
+    }
+
+    .room-img{
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #d4af37;
+    }
+
+    /* WhatsApp Button */
+    .btn-whatsapp{
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fs-3" href="#home"> HOTEL AL HABBI• قصر النور</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fs-5">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+        <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div>
+    <h1 class="display-4 fw-bold">HOTEL AL HABBI• قصر النور</h1>
+    <p class="lead">Luxury • Comfort • Excellence</p>
+  </div>
+</section>
+
+<!-- Rooms Section -->
+<section class="container my-5" id="rooms">
+  <div class="gold-border">
+    <h2 class="text-center mb-4">Our Rooms</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" class="room-img">
+        <h5 class="mt-2 text-center">Deluxe Room</h5>
+      </div>
+
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" class="room-img">
+        <h5 class="mt-2 text-center">Premium Suite</h5>
+      </div>
+
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" class="room-img">
+        <h5 class="mt-2 text-center">Family Luxury</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Section -->
+<section class="container my-5" id="booking">
+  <div class="gold-border">
+    <h2 class="text-center mb-4">Book Your Stay</h2>
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Your Name" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Email" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="tel" class="form-control" placeholder="Phone" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="date" class="form-control" required>
+      </div>
+
+      <div class="col-12 text-center">
+        <button class="btn btn-success">Submit Booking</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Location Section -->
+<section class="container my-5" id="location">
+  <div class="gold-border">
+    <h2 class="text-center mb-3">Our Location</h2>
+    <p class="text-center">Ajmer Pushkar Road, Rajasthan, India</p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.206371642572!2d74.633333!3d26.449999"
+      width="100%" height="350"
+      style="border:3px solid #d4af37;border-radius:10px;"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/911234567890" class="btn-whatsapp">💬</a>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3">
+  <p class="mb-0">Qasr Al Nur Hotel • Ajmer Pushkar Road</p>
+  <p class="mb-0">Online Booking Available</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
